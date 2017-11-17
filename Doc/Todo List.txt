@@ -1,11 +1,22 @@
+=========================================
+
 Problem:
 printf("För högt värde, försök igen: \n");
+
+=========================================
 
 Solution:
 
 void wrong_input();
 
 Added this into a function
+
+void wrong_input()
 {
+    while (1)
+    {
     printf("För högt värde, försök igen: \n");
+    continue;
+    }
 }
+=========================================
