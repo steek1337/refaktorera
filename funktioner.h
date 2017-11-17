@@ -1,5 +1,5 @@
 
-
+//====================================//====================================
 double ohms_lag(double r, double i){
 
     double u = i * r;
@@ -7,6 +7,8 @@ double ohms_lag(double r, double i){
     return u;
 }
 
+
+//====================================//====================================
 double res_tot(double r1, double r2, double r3){
 
 
@@ -16,6 +18,7 @@ double res_tot(double r1, double r2, double r3){
     return rtot;
 }
 
+//====================================//====================================
 double eff_enk(double u, double i){
 
     double p = u * i;
@@ -23,6 +26,7 @@ double eff_enk(double u, double i){
     return p;
 }
 
+//====================================//====================================
 double sken_eff(double u, double i){
 
     double s = u * i;
@@ -30,6 +34,7 @@ double sken_eff(double u, double i){
     return s;
 }
 
+//====================================//====================================
 double aktiv_eff(double u, double i, double cos){
 
     double p = u * i * cos;
@@ -37,6 +42,7 @@ double aktiv_eff(double u, double i, double cos){
     return p;
 }
 
+//====================================//====================================
 double sken_3fas(double u, double i){
 
     double s = u * i * sqrt(3);
@@ -44,6 +50,7 @@ double sken_3fas(double u, double i){
     return s;
 }
 
+//====================================//====================================
 double aktiv_3fas(double u, double i, double cos){
 
     double p = u * i * sqrt(3) * cos;
@@ -51,8 +58,7 @@ double aktiv_3fas(double u, double i, double cos){
     return p;
 }
 
-
-
+//====================================//====================================
 void wrong_input()
 {
     while (1)
@@ -62,14 +68,15 @@ void wrong_input()
     }
 }
 
-
+//====================================//====================================
 void enter_volt()
 {
     printf("Skriv spännngen U i volt(V): \n ");
 }
 
-
+//====================================//====================================
 void enter_ampere()
 {
     printf("gånger Strömmen I i ampere(A)\n\n");
 }
+//====================================//====================================
