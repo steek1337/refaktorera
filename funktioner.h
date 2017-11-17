@@ -65,5 +65,11 @@ void wrong_input()
 
 void enter_volt()
 {
-printf("Skriv spännngen U i volt(V): \n ");
+    printf("Skriv spännngen U i volt(V): \n ");
+}
+
+
+void enter_ampere()
+{
+    printf("gånger Strömmen I i ampere(A)\n\n");
 }

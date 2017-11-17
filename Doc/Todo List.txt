@@ -7,7 +7,7 @@ printf("gånger Strömmen I i Ampere(A): \n\n");
 
 =========================================
 
-Solution:
+Solutions:
 
 void wrong_input()
 {

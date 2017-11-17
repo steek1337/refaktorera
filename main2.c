@@ -84,7 +84,7 @@ int main()
         {
 
             printf("Effektlagen enkel För likström är effekten P i Watt (W) lika med spänningen U i volt(V)\n");
-            printf("gånger Strömmen I i Ampere(A): \n\n");
+            enter_ampere();
             double u, i;
             enter_volt();
             scanf("%lf", &u);
@@ -100,7 +100,7 @@ int main()
         {
 
             printf("Skenbar effekt enfas räknas med storheten VA(VoltAmpere) som är lika med spänningen U i volt(V)\n");
-            printf("gånger Strömmen I i ampere(A)\n\n");
+            enter_ampere();
             double u, i;
             enter_volt();
             scanf("%lf", &u);
@@ -159,7 +159,7 @@ int main()
             printf("3-fas aktiv effekt är effekten P i Watt(W) lika med spänningen U i volt(V) gånger Strömmen I i ampere(A)\n");
             printf("gånger cos < 1 && cos > 0 gånger roten ur 3 SQRT(3).\n\n");
             double u, i, cos;
-            enter_volt();
+            printf("Skriv spänningen U i volt(V): \n ");
             scanf("%lf", &u);
             if(u > 400)
             {
