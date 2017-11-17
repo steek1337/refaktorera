@@ -43,7 +43,7 @@ int main()
             if(r > 20000)
             {
                 wrong_input();
-                continue;
+                //continue;
             }
 
             printf("Skriv ström I < 440 Ampere: \n");
@@ -51,13 +51,11 @@ int main()
             if(i > 440)
             {
                 wrong_input();
-                continue;
             }
 
             printf("%f V\n", ohms_lag(r, i));
 
         }
-
         else if(val == 2)
         {
             printf("Resistans sammankopplade i parallella kretsar är lika med 1 delat Resistans R total är lika med\n");
@@ -68,25 +66,21 @@ int main()
             if(r1 > 20000)
             {
                 wrong_input();
-                continue;
             }
             printf("Skriv resistans R2 < 20 000ohm: \n ");
             scanf("%lf", &r2);
             if(r2 > 20000)
             {
                 wrong_input();
-                continue;
             }
             printf("Skriv resistans R3 < 20 000ohm: \n ");
             scanf("%lf", &r3);
             if(r3 > 20000)
             {
                 wrong_input();
-                continue;
             }
             printf("%f Ohm\n", res_tot(r1, r2, r3));
         }
-
         else if(val == 3)
         {
 
@@ -100,7 +94,6 @@ int main()
             if(i > 440)
             {
                 wrong_input();
-                continue;
             }
             printf("%f W\n", eff_enk(u, i));
         }
@@ -117,7 +110,6 @@ int main()
             if(i > 440)
             {
                 wrong_input();
-                continue;
             }
             printf("%f VA\n", sken_eff(u, i));
         }
@@ -133,14 +125,12 @@ int main()
             scanf("%lf", &i);
             if(i > 440){
                 wrong_input();
-                continue;
             }
             printf("Skriv in effektfaktorn cos > 0 && cos < 1:\n");
             scanf("%lf", &cos);
             if (cos < 0 && cos > 1)
             {
-                printf("Fel värde, försök igen\n");
-                continue;
+                wrong_input();
             }
             printf("%f W\n", aktiv_eff(u, i, cos));
         }
@@ -154,7 +144,6 @@ int main()
             if(u > 400)
             {
                 wrong_input();
-                continue;
             }
 
             printf("Skriv ström I i ampere < 440: \n");
@@ -162,7 +151,6 @@ int main()
             if(i > 440)
             {
                 wrong_input();
-                continue;
             }
             printf("%f VA\n", sken_3fas(u, i));
         }
@@ -177,14 +165,12 @@ int main()
             if(u > 400)
             {
                 wrong_input();
-                continue;
             }
             printf("Skriv ström I i ampere(A): \n");
             scanf("%lf", &i);
             if(i > 440)
             {
                 wrong_input();
-                continue;
             }
 
             printf("Skriv in effektfaktorn cos > 0 && cos < 1: \n");
@@ -192,7 +178,6 @@ int main()
             if (cos < 0 && cos > 1)
             {
                 wrong_input();
-                continue;
             }
 
             printf("%f W\n", aktiv_3fas(u ,i, cos));
