@@ -1,6 +1,6 @@
 
 /*
-Mer information om programets funktionalitet hittar ni i readme filen
+Mer V\x84ljinformation om programets funktionalitet hittar ni i readme filen
 */
 #include <stdio.h>
 #include <stdlib.h>
@@ -20,15 +20,15 @@ int main()
         printf("\n");
         int val;
 
-        printf("Välj vilka storheter du vill beräkna:\n");
-        printf("Välj 1 för: OHMS LAG\n");
-        printf("Välj 2 för: Rtot\n");
-        printf("Välj 3 för: EFFEKTLAGEN ENKEL\n");
-        printf("Välj 4 för: SKENBAR EFFEKT ENFAS\n");
-        printf("Välj 5 för: AKTIV EFFEKT/MEDELEFFEKT ENFAS\n");
-        printf("Välj 6 för: SKENBAR EFFEKT 3-FAS\n");
-        printf("Välj 7 för: AKTIV EFFEKT 3-FAS\n");
-        printf("Välj 0 för: För ATT AVSLUTA\n");
+        printf("V\x84lj vilka storheter du vill beräkna:\n");
+        printf("V\x84lj 1 f\x94r: OHMS LAG\n");
+        printf("V\x84lj 2 f\x94r: Rtot\n");
+        printf("V\x84lj 3 f\x94r: EFFEKTLAGEN ENKEL\n");
+        printf("V\x84lj 4 f\x94r: SKENBAR EFFEKT ENFAS\n");
+        printf("V\x84lj 5 f\x94r: AKTIV EFFEKT/MEDELEFFEKT ENFAS\n");
+        printf("V\x84lj 6 f\x94r: SKENBAR EFFEKT 3-FAS\n");
+        printf("V\x84lj 7 f\x94r: AKTIV EFFEKT 3-FAS\n");
+        printf("V\x84lj 0 f\x94r: För ATT AVSLUTA\n");
 
         scanf("%d", &val);
 
