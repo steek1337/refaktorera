@@ -2,14 +2,12 @@
 
 Problem:
 printf("För högt värde, försök igen: \n");
+printf("Skriv spännngen U i volt(V): \n ");
+printf("gånger Strömmen I i Ampere(A): \n\n");
 
 =========================================
 
 Solution:
-
-void wrong_input();
-
-Added this into a function
 
 void wrong_input()
 {
@@ -19,4 +17,17 @@ void wrong_input()
     continue;
     }
 }
+
 =========================================
+
+void enter_volt()
+{
+    printf("Skriv spännngen U i volt(V): \n ");
+}
+
+=========================================
+
+void enter_ampere()
+{
+    printf("gånger Strömmen I i ampere(A)\n\n");
+}
