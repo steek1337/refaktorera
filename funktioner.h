@@ -28,7 +28,6 @@ double sken_eff(double u, double i){
     double s = u * i;
 
     return s;
-
 }
 
 double aktiv_eff(double u, double i, double cos){
@@ -36,7 +35,6 @@ double aktiv_eff(double u, double i, double cos){
     double p = u * i * cos;
 
     return p;
-
 }
 
 double sken_3fas(double u, double i){
