@@ -53,11 +53,17 @@ double aktiv_3fas(double u, double i, double cos){
 
 
 
-    void wrong_input()
+void wrong_input()
+{
+    while (1)
     {
-        while (1)
-        {
         printf("För högt värde, försök igen: \n");
         continue;
-        }
     }
+}
+
+
+void enter_volt()
+{
+printf("Skriv spännngen U i volt(V): \n ");
+}
