@@ -1,0 +1,11 @@
+Problem:
+printf("För högt värde, försök igen: \n");
+
+Solution:
+
+void wrong_input();
+
+Added this into a function
+{
+    printf("För högt värde, försök igen: \n");
+}
