@@ -1,5 +1,5 @@
 /*
-Mer V\x84ljinformation om programets funktionalitet hittar ni i readme filen
+Mer information om programets funktionalitet hittar ni i readme filen
 */
 
 #include <stdio.h>
@@ -43,7 +43,6 @@ int main()
             if(r > 20000)
             {
                 wrong_input();
-                //continue;
             }
 
             printf("Skriv ström I < 440 Ampere: \n");
