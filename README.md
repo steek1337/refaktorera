@@ -19,8 +19,8 @@ AKTIV EFFEKT 3-FAS ~: P=U*I*sqrt(3)*cos()
 
 Använder:
 
-\x86 = å
-\x84 = ä
-\x94 = ö
+å = \x86;
+ä = \x84;
+ö = \x94;
 
 Då de verkar vara problem med chcp1252
