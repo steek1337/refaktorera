@@ -50,3 +50,10 @@ double aktiv_3fas(double u, double i, double cos){
 
     return p;
 }
+
+
+
+    void wrong_input()
+    {
+        printf("För högt värde, försök igen: \n");
+    }
