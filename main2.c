@@ -1,7 +1,7 @@
-
 /*
 Mer V\x84ljinformation om programets funktionalitet hittar ni i readme filen
 */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -20,7 +20,7 @@ int main()
         printf("\n");
         int val;
 
-        printf("V\x84lj vilka storheter du vill beräkna:\n");
+        printf("V\x84lj vilka storheter du vill ber\x85kna:\n\n");
         printf("V\x84lj 1 f\x94r: OHMS LAG\n");
         printf("V\x84lj 2 f\x94r: Rtot\n");
         printf("V\x84lj 3 f\x94r: EFFEKTLAGEN ENKEL\n");
@@ -42,7 +42,7 @@ int main()
             scanf("%lf", &r);
             if(r > 20000)
             {
-                printf("För högt värde, försök igen: \n");
+                wrong_input();
                 continue;
             }
 
@@ -50,7 +50,7 @@ int main()
             scanf("%lf", &i);
             if(i > 440)
             {
-                printf("För högt värde, försök igen: \n");
+                wrong_input();
                 continue;
             }
 
@@ -67,21 +67,21 @@ int main()
             scanf("%lf", &r1);
             if(r1 > 20000)
             {
-                printf("För högt värde, försök igen: \n");
+                wrong_input();
                 continue;
             }
             printf("Skriv resistans R2 < 20 000ohm: \n ");
             scanf("%lf", &r2);
             if(r2 > 20000)
             {
-                printf("För högt värde, försök igen: \n");
+                wrong_input();
                 continue;
             }
             printf("Skriv resistans R3 < 20 000ohm: \n ");
             scanf("%lf", &r3);
             if(r3 > 20000)
             {
-                printf("För högt värde, försök igen: \n");
+                wrong_input();
                 continue;
             }
             printf("%f Ohm\n", res_tot(r1, r2, r3));
@@ -99,7 +99,7 @@ int main()
             scanf("%lf", &i);
             if(i > 440)
             {
-                printf("För högt värde, försök igen: \n");
+                wrong_input();
                 continue;
             }
             printf("%f W\n", eff_enk(u, i));
@@ -116,7 +116,7 @@ int main()
             scanf("%lf", &i);
             if(i > 440)
             {
-                printf("För högt värde, försök igen: \n");
+                wrong_input();
                 continue;
             }
             printf("%f VA\n", sken_eff(u, i));
@@ -132,7 +132,7 @@ int main()
             printf("Skriv ström I: \n");
             scanf("%lf", &i);
             if(i > 440){
-                printf("För högt värde, försök igen:\n");
+                wrong_input();
                 continue;
             }
             printf("Skriv in effektfaktorn cos > 0 && cos < 1:\n");
@@ -153,7 +153,7 @@ int main()
             scanf("%lf", &u);
             if(u > 400)
             {
-                printf("För högt värde, försök igen: \n");
+                wrong_input();
                 continue;
             }
 
@@ -161,7 +161,7 @@ int main()
             scanf("%lf", &i);
             if(i > 440)
             {
-                printf("För högt värde, försök igen: \n");
+                wrong_input();
                 continue;
             }
             printf("%f VA\n", sken_3fas(u, i));
@@ -176,14 +176,14 @@ int main()
             scanf("%lf", &u);
             if(u > 400)
             {
-                printf("För högt värde, försök igen.\n");
+                wrong_input();
                 continue;
             }
             printf("Skriv ström I i ampere(A): \n");
             scanf("%lf", &i);
             if(i > 440)
             {
-                printf("För högt värde, försök igen.\n");
+                wrong_input();
                 continue;
             }
 
@@ -191,7 +191,7 @@ int main()
             scanf("%lf", &cos);
             if (cos < 0 && cos > 1)
             {
-                printf("För högt värde, försök igen: \n");
+                wrong_input();
                 continue;
             }
 
