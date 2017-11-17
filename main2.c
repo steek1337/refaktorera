@@ -86,7 +86,7 @@ int main()
             printf("Effektlagen enkel För likström är effekten P i Watt (W) lika med spänningen U i volt(V)\n");
             printf("gånger Strömmen I i Ampere(A): \n\n");
             double u, i;
-            printf("Skriv spännngen U i volt(V): \n ");
+            enter_volt();
             scanf("%lf", &u);
             printf("Skriv ström Ampere I < 440A: \n");
             scanf("%lf", &i);
@@ -102,7 +102,7 @@ int main()
             printf("Skenbar effekt enfas räknas med storheten VA(VoltAmpere) som är lika med spänningen U i volt(V)\n");
             printf("gånger Strömmen I i ampere(A)\n\n");
             double u, i;
-            printf("Skriv spänningen U i volt: \n ");
+            enter_volt();
             scanf("%lf", &u);
             printf("Skriv ström I < 440A: \n");
             scanf("%lf", &i);
@@ -118,7 +118,7 @@ int main()
             printf("Aktiv medelefdekt enfas är lika med effekt P i watt(W) lika med spänningen U i volt(V) gånger Strömmen I \n");
             printf("i Ampere gånger cosinus fi/efkektfaktor < 1:\n\n");
             double u, i, cos;
-            printf("Skriv spänning U i volt: \n ");
+            enter_volt();
             scanf("%lf", &u);
             printf("Skriv ström I: \n");
             scanf("%lf", &i);
@@ -159,7 +159,7 @@ int main()
             printf("3-fas aktiv effekt är effekten P i Watt(W) lika med spänningen U i volt(V) gånger Strömmen I i ampere(A)\n");
             printf("gånger cos < 1 && cos > 0 gånger roten ur 3 SQRT(3).\n\n");
             double u, i, cos;
-            printf("Skriv spänningen U i volt(V): \n ");
+            enter_volt();
             scanf("%lf", &u);
             if(u > 400)
             {
